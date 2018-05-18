@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:columnCount="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_columnSpan="2"
+                    android:layout_row="0"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="인바디 정보입력"
+                    android:textAlignment="center"
+                    android:textSize="40dp" />
+
+                <EditText
+                    android:id="@+id/editText0"
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="2"
+                    android:ems="10"
+                    android:hint="입력"
+                    android:inputType="textMultiLine" />
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:text="오른팔"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="3"
+                    android:text="왼팔"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="4"
+                    android:hint="입력"
+                    android:ems="10"
+                    android:inputType="textMultiLine" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="5"
+                    android:text="몸통"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="6"
+                    android:hint="입력"
+                    android:ems="10"
+                    android:inputType="textMultiLine" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="7"
+                    android:text="오른다리"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="8"
+                    android:hint="입력"
+                    android:ems="10"
+                    android:inputType="textMultiLine" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="9"
+                    android:text="왼다리"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="10"
+                    android:hint="입력"
+                    android:ems="10"
+                    android:inputType="textMultiLine" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarRightArm"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_row="2" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarLeftArm"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_row="4" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarUpperbody"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_row="6"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <ProgressBar
+                    android:id="@+id/progressBarRightleg"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_row="8"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <ProgressBar
+                    android:id="@+id/progressBarLeftleg"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_row="10"
+                    android:layout_gravity="center_vertical"/>
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_column="1"
+                    android:layout_row="11"
+                    android:text="저장"
+                    android:onClick="onClickSave"/>
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_column="1"
+                    android:layout_row="12"
+                    android:text="건너뛰기"
+                    android:onClick="onClickPass"/>
+
+
+
+        </GridLayout>
+</ScrollView>

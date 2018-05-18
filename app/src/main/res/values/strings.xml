@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TIMS</string>
+    <string name="facebook_app_id">210795773023193</string>
+    <string name="kakao_app_id">d205e14432abc86007beff71f4726ea5</string>
+    <string name="main_text">TIMS</string>
+    <string name="open_drawer">Open drawer</string>
+    <string name="close_drawer">Close drawer</string>
+    <string-array name="menulist">
+        <item>홈</item>
+        <item>설정</item>
+    </string-array>
+</resources>
